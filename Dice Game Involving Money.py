@@ -142,7 +142,8 @@ if var >= 15:
         if inp2.lower() == "no":
             print("We hope to see you around! Bye-bye👋")
             exit()
-
+if var <= 0:
+    print("Sorry you have nothing left to bet! You are out of money.")
 
 else:
     print("An error has occured. Please try again later!")
