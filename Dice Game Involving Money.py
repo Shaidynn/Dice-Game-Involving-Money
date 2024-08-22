@@ -1,4 +1,5 @@
 #Dice Game Involving Money
+#Dice Game Involving Money
 
 import random
 
@@ -44,6 +45,10 @@ elif second.lower() == "yes":
                     end = float(var1 * 2)
                     total = round(end, 3)
                     print(f"On the first dice, you rolled a {random1}. \nOn the second dice, you also rolled a {random2}! Your total is now ${total}!")
+
+
+
+             
                     
             if inp1.lower() == "no":
                 ("We hope to see you around! Bye-bye👋")
@@ -73,8 +78,6 @@ elif second.lower() == "yes":
                     range1 = int(input("How many times would you like to reroll? "))
                     for i in range(range1):
                         
-                        dice1 = [1, 2, 3, 4, 5, 6]
-                        dice2 = [1, 2, 3, 4, 5, 6]
                         random1 = random.choice(dice1)
                         random2 = random.choice(dice2)
                         sum = random1 + random2
@@ -111,9 +114,12 @@ elif second.lower() == "yes":
                     range1 = int(input("How many times would you like to reroll? "))
                     for i in range(range1):
                        
-                        
+                        random1 = random.choice(dice1)
+                        random2 = random.choice(dice2)
+                        sum = random1 + random2
+                    
                         if sum > 10:
-                            var = grandtotal
+                            var = total
                             total = float(var * 0.5)
                             end = float(total + var)
                             grandtotal = round(end, 2)
@@ -144,14 +150,13 @@ elif second.lower() == "yes":
                     range1 = int(input("How many times would you like to reroll? "))
                     for i in range(range1):
                        
-                        dice1 = [1, 2, 3, 4, 5, 6]
-                        dice2 = [1, 2, 3, 4, 5, 6]
+                      
                         random1 = random.choice(dice1)
                         random2 = random.choice(dice2)
                         sum = random1 + random2
                         
                         if sum > 10:
-                            var = grandtotal
+                            var = total
                             total = float(var * 0.5)
                             end = float(total + var)
                             grandtotal = round(end, 2)
